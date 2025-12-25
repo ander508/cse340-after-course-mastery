@@ -1,0 +1,19 @@
+<% if (title) { %>
+<h1 class="title"><%= title %></h1>
+<% } else {
+  res.redirect('/')
+} %>
+
+
+
+<%# messsage() %>
+
+
+<% if (html) { %>
+<div class="card"><%- html %></div>
+<% } else {
+  res.redirect('/')
+} %>
+
+
+

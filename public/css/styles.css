@@ -54,3 +54,98 @@ main, footer{
   width: 90%;
   margin: auto;
 }
+
+.hero-image{
+  position: relative;
+  /* background-color: rgba(128, 128, 128, 0.096); */
+  width: 90%;
+  margin: auto;
+  /* box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.349); */
+  margin-bottom: 50px;
+}
+
+.own-today{
+  color: rgb(0, 110, 255);
+  background-color: rgba(255, 255, 255, 0.678);
+  position: absolute;
+  top: 0;
+  width: 25%;
+}
+.own-today ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-vehicle{
+  width: 90%;
+  margin-left: 5%;
+}
+.own-today-img{
+  width: 100%;
+}
+
+.upgrade-review{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.upgrade-imgs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+.img{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  background-color: rgba(0, 110, 255, 0.39);
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+
+  
+}
+.img a{
+  color: black;
+}
+
+.upgrades .reviews{
+  margin-bottom: 30px;
+}
+
+.format-inventory{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+
+}
+.format-inventory li{
+  width: 30%;
+  /* border: 1px solid black; */
+  list-style-type: none;
+  background-color: rgba(250, 235, 215, 0.479);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.233);
+}
+
+.format-price{
+  display: block;
+  width: 100%;
+  text-align: center;
+
+}
+
+.h-line{
+  width: 100%;
+  display: block;
+}

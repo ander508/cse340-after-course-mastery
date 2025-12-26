@@ -10,7 +10,7 @@ async function inventoryList(sql){
         htmltag += `<li>
                         <a href="../../inv/detail/${row.inv_id}"
                             title="View ${row.inv_make} ${row.inv_model} details">
-                            <img src="${row.inv_thumbnail}" alt="Image of ${row.inv_make} ${row.inv_model} on Anderson Motors"/>
+                            <img class="inv-img" src="${row.inv_thumbnail}" alt="Image of ${row.inv_make} ${row.inv_model} on Anderson Motors" width="100"/>
                         </a>
 
                         <div>
@@ -43,7 +43,8 @@ async function singleVehicleDetails(sql) {
 
   if (sql) {
     htmltag += `
-      <li>
+      <li class="single-vehicle-card">
+      <h2>${sql.inv_make} ${sql.inv_model}</h2>
         <img src="${sql.inv_image}" 
              alt="Image of ${sql.inv_make} ${sql.inv_model}">
       </li>

@@ -126,7 +126,7 @@ main, footer{
 
 }
 .format-inventory li{
-  width: 30%;
+  width: 330px;
   /* border: 1px solid black; */
   list-style-type: none;
   background-color: rgba(250, 235, 215, 0.479);
@@ -148,4 +148,12 @@ main, footer{
 .h-line{
   width: 100%;
   display: block;
+}
+.inv-img{
+  display: block;
+  width: 100%;
+}
+
+.single-vehicle-card {
+  list-style-type: none;
 }

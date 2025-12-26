@@ -21,7 +21,24 @@ async function getNav(req, res){
     htmltag +=`</ul>`
     
     return htmltag;
-    
-    
 }
-module.exports = {getNav}
+
+
+
+/* ****************************************
+ * Middleware For Handling Errors
+ * Wrap other function in this for 
+ * General Error Handling
+ **************************************** */
+// Util.handleErrors = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next)
+
+// REWRITTEN
+function handleErrors(fn) {
+    return (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next)
+}
+
+
+
+
+
+module.exports = {getNav, handleErrors}
